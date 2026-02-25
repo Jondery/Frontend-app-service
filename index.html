@@ -13,15 +13,14 @@
 
     <script>
         async function loadBackendData() {
-            try {
-                // Replace with your deployed backend API URL
-                const response = await fetch("https://lab01-backend-api-c8e7ecf4czbzeect.australiasoutheast-01.azurewebsites.net/api/data");
-                const data = await response.json();
-                document.getElementById('output').textContent = JSON.stringify(data, null, 2);
-            } catch (err) {
-                document.getElementById('output').textContent = "Error: " + err;
-            }
-        }
+    try {
+        // Fake backend data for demo
+        const data = { message: "Hello from fake backend!" };
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+        document.getElementById('output').textContent = "Error: " + err;
+    }
+}
     </script>
 </body>
 </html>
